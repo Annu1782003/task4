@@ -2,99 +2,91 @@
 <html>
 
 <head>
-  <title>Chessboard</title>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Write your code here */
-    /* Each square should be 100px by 100px */
-    /* My colours for white: #f0d9b5, black: #b58863 */
-    
+    .box
+    body {
+      font-family: 'Sono', sans-serif;
+    }
 
-    .black {
-      height: 100px;
-      width: 100px;
-      background-color: #f0d9b5;
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+    .pricing-container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
     }
-    .white {
-      height: 100px;
-      width: 100px;
-      background-color: #b58863;
     }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(8,100px);
-      grid-template-rows: 90px repeat(8,100px);
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
   
+.pricing-plan {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 5px solid black;
+  border: 0;
+}
+.plan-button {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+}
+
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title"><h2>Basic</h2></div>
+      <div class="plan-price"><h1>$11.99/month</h1></div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title"><h2>Standard</h2></div>
+      <div class="plan-price"><h1>$19.99/month</h1></div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title"><h2>Premium</h2></div>
+      <div class="plan-price"><h1>$49.99/month</h1></div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
   </div>
+
 </body>
 
 </html>
