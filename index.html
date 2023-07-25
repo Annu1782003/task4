@@ -3,45 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grid Fundamentals</title>
+  <title>Column Layout Methods</title>
   <style>
-    body {
-      font-family: sans-serif;
+    p {
+      padding: 10px;
+      margin: 0;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    li {
+      list-style: none;
     }
 
     .container {
+      padding: 10px;
+      background-color: gold;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      background-color: #f2f2f2;
+      flex-wrap: wrap;
     }
+    li{
+      display: flex;
+      margin: 10px;
+    }
+    
 
-    .item {
-      width: 200px;
-      margin: 20px;
-      background-color: #3498db;
-      color: #fff;
-      text-align: center;
-      line-height: 2;
-      font-size: 24px;
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Grid Sizing</h1>
-    <a class="item" href="./fixed-size.html">Fixed Size</a>
-    <a class="item" href="./auto-size.html">Auto Size</a>
-    <a class="item" href="./fractional-size.html">Fractional Size</a>
-    <a class="item" href="./minmax-size.html">MinMax Size</a>
-    <a class="item" href="./repeat.html">Repeat</a>
-    <a class="item" href="./test.html">Test</a>
+    <p>Page Layout Methods</p>
 
+    <li><a href="./html-table.html">HTML Table</a></li>
+    <li><a href="./inline-block.html">Inline-Block</li>
+    <li><a href="./absolute-position.html">Absolute Positioning</li>
+    <li><a href="./float.html">Float</li>
+    <li><a href="./flex.html">Flexbox</li>
 
   </div>
 </body>
